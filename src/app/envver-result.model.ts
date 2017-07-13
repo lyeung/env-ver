@@ -1,5 +1,5 @@
 export class EnvVerResult {
-  public name: string;
+  name: string;
   version: string;
   status: string;
   lastKnown: string;
