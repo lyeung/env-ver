@@ -1,4 +1,26 @@
 <div class=".col-sm-12 .col-md-12 .col-lg-12">
-  <!--env-ver-list-component [envVerResults]="envVerResults"></env-ver-list-component-->
-  <env-ver-form></env-ver-form>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" [routerLink]="['/']">Env-Ver</a>
+
+  
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+	<li class="nav-item">
+	  <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
+	</li>
+	<li class="nav-item">
+	  <a class="nav-link" [routerLink]="['/entry']">Entries</a>
+	</li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="content">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
 </div>
